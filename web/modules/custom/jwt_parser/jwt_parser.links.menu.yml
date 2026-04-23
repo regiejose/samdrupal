@@ -1,0 +1,5 @@
+jwt_parser.settings:
+  title: 'JWT Settings'
+  description: 'Configure My Module'
+  route_name: jwt_parser.config
+  parent: system.admin_config_development

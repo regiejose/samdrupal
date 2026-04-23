@@ -1,0 +1,4 @@
+services:
+  jwt_parser.service:
+    class: Drupal\jwt_parser\Service\JwtParser
+    arguments: ['@config.factory']
