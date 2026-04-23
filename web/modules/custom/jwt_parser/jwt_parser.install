@@ -1,0 +1,8 @@
+<?php
+
+function jwt_parser_uninstall() {
+  // Remove JWT parser settings.
+  \Drupal::configFactory()
+    ->getEditable('jwt_parser.settings')
+    ->delete();
+}

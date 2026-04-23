@@ -21,7 +21,8 @@
         "drupal/core-project-message": "^10.6",
         "drupal/core-recommended": "^10.6",
         "drupal/devel": "^5.5",
-        "drush/drush": "^13.7"
+        "drush/drush": "^13.7",
+        "firebase/php-jwt": "^7.0"
     },
     "conflict": {
         "drupal/drupal": "*"

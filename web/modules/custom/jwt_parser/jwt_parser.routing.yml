@@ -1,0 +1,17 @@
+jwt_parser.config:
+  path: '/admin/config/jwt-parser/settings'
+  defaults:
+    _form: '\Drupal\jwt_parser\Form\JwtParserConfigForm'
+    _title: 'JWT Settings'
+  requirements:
+    _permission: 'administer site configuration'
+
+jwt_parser.external_api:
+  path: '/api/v1/external/{token}'
+  defaults:
+    _controller: '\Drupal\jwt_parser\Controller\ExternalApiController::jwtParser'
+    _title: 'External API'
+  methods: [GET]
+  requirements:
+    _permission: 'access content'
+    token: '^[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}$'

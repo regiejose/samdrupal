@@ -1,0 +1,5 @@
+name: JWT Parser
+type: module
+description: External API that parse and decode JWT tokens.
+core_version_requirement: ^9 || ^10 || ^11
+package: Custom
